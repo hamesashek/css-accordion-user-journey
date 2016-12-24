@@ -1,0 +1,107 @@
+
+label {
+   display: inline-block;
+  position: relative;
+  padding: 24px 96px;
+  color: #fff;
+  background-color: #6599FF;;
+  text-shadow: 0 0 rgba(0,0,0,0.3);
+  transition: background 0.3s, text-shadow 0.3s;
+font-size: 22px;
+    font-weight: 700;
+	}
+  label:hover {
+    color: #F57C00;
+}
+	label:hover::before {
+    background: #ff6cff;
+}
+label::before {
+    font-family:'Impact';
+    text-align:center;
+    content:counter(li),"";
+    border:10px solid purple;
+    border-radius:40px;
+    display:inline-block;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    font-size:24px;
+    margin:0 0.5em 0 0;
+    background:white;
+    color:purple;
+  }
+.css-accordion {
+    list-style-type: none;
+    counter-reset: li;
+    padding: 20px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.2);
+}
+ .css-accordion .accordion-item {
+    counter-increment: li;
+    padding: 0;
+    margin: 0;
+}
+    .css-accordion .accordion-item .item-content-container {
+    border-right: 20px solid #6599FF;
+    padding: 10px;
+}
+    .css-accordion .accordion-item .item-content-container .item-content {
+    padding: 0.5em 1em;
+    margin: 0 0 0 36px;
+    border-radius: 20px;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+		
+		
+.css-accordion .accordion-item .item-content-container .item-content p {
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-top: 70px;
+    font-size: 14px;
+    font-weight: 700;
+}
+  	.css-accordion .accordion-item input[type="radio"] {
+    display: none;
+}
+    .css-accordion .accordion-item input[type="radio"] ~ .item-content-container {
+    overflow: hidden;
+}
+	
+        .css-accordion .accordion-item input[type="radio"] ~ .item-content-container .item-content {
+    height: 0;
+    transition: all 0.3s linear;
+}
+	
+     .css-accordion .accordion-item input[type="radio"]:checked ~ .item-content-container .item-content {
+    height: 200px;
+    overflow-y: auto;
+    transition: all 0.5s linear;
+}
+      .css-accordion .accordion-item input[type="radio"]:checked + label {
+    color: purple;
+}
+  .css-accordion .accordion-item input[type="radio"]:checked + label::before {
+    background: #ffb3ff;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+  .css-accordion .accordion-item input[type="radio"]:checked + label::before {
+    background: #ffb3ff;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+  
+  
+  .css-accordion .accordion-item input[type="radio"]:checked + label {
+  display: inline-block;
+  position: relative;
+  padding: 24px 96px;
+  color: #fff;
+  background-color: #F57C00;
+  text-shadow: 0 0 rgba(0,0,0,0.3);
+  transition: background 0.3s, text-shadow 0.3s;
+}
+  
