@@ -1,4 +1,4 @@
-label {
+#stage-label {
     display: inline-block;
     position: relative;
     padding: 15px;
@@ -9,13 +9,13 @@ label {
     font-size: 18px;
     font-weight: 700;
 }
-  label:hover {
+  #stage-label:hover {
     color: #F57C00;
 }
-	label:hover::before {
+	#stage-label:hover::before {
     background: #ff6cff;
 }
-label::before {
+#stage-label::before {
     font-family:'Impact';
     text-align:center;
     content:counter(li),"";
